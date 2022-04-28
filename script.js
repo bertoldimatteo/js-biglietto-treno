@@ -11,8 +11,8 @@ let firstPrice = Number(pathKm * 0.21);
 
 if (ageUser <= 17) {
     document.getElementById("finalPrice").innerHTML =
-    Number(firstPrice - (firstPrice * 20) / 100);
+    Number(firstPrice - (firstPrice * 20) / 100).toFixed(2);
 } else if (ageUser >= 65) {
     document.getElementById("finalPrice").innerHTML =
-    Number(firstPrice - (firstPrice * 40) / 100);
+    Number(firstPrice - (firstPrice * 40) / 100).toFixed(2);
 }
