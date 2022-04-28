@@ -15,4 +15,6 @@ if (ageUser <= 17) {
 } else if (ageUser >= 65) {
     document.getElementById("finalPrice").innerHTML =
     Number(firstPrice - (firstPrice * 40) / 100).toFixed(2);
+} else {
+    document.getElementById("finalPrice").innerHTML = firstPrice
 }
