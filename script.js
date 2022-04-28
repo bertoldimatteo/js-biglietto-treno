@@ -8,4 +8,11 @@ const pathKm = Number(prompt("Quanti km vuoi percorrere?"));
 const ageUser = Number(prompt("Quanti anni hai?"));
 
 let firstPrice = Number(pathKm * 0.21);
-console.log(firstPrice);
+
+if (ageUser <= 17) {
+    document.getElementById("finalPrice").innerHTML =
+    Number(firstPrice - (firstPrice * 20) / 100);
+} else if (ageUser >= 65) {
+    document.getElementById("finalPrice").innerHTML =
+    Number(firstPrice - (firstPrice * 40) / 100);
+}
